@@ -1,0 +1,45 @@
+.maintenance-message-message--wrapper {
+  background-color: rgba(var(--secondary-rgb), 0.5);
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
+  height: calc(100vh - var(--header-offset));
+  z-index: z("header") - 1;
+}
+
+.maintenance-message-message--container {
+  background-color: rgba(var(--secondary-rgb), 0.75);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10vh 15vw;
+  box-sizing: border-box;
+  height: 100%;
+  @supports (backdrop-filter: blur(6px)) or (-webkit-backdrop-filter: blur(6px)) {
+    background-color: rgba(var(--secondary-rgb), 0.25);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    -webkit-mask: linear-gradient(black, black, transparent);
+    mask: linear-gradient(black, black, transparent);
+  }
+}
+
+.maintenance-message-message--contents {
+  font-size: var(--font-up-2);
+  padding-top: 1em;
+}
+
+// exclude from some routes
+body.archetype-private_message,
+body[class*=" user-"] {
+  .maintenance-message-message--wrapper {
+    display: none;
+  }
+}
+
+// staff message styling
+.maintenance-message-message--staff-note {
+  background-color: var(--tertiary-low);
+  padding: 1em;
+  text-align: center;
+}

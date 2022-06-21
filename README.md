@@ -1,5 +1,3 @@
-# **Theme Name**
+# **discourse-maintenance-message**
 
-**Theme Summary**
-
-For more information, please see: **url to meta topic**
+Show a blocking message to non-admin users while making big changes to the site. Useful to temporarily block actions while making large-scale structural changes.

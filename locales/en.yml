@@ -1,2 +1,4 @@
 en:
-  placeholder: placeholder
+  heading: Hang tight, we're updating the forums
+  message: We are making some changes to the structure of the forum, please come back shortly.
+  staff_message: 'The "maintenance message" theme component is enabled. A full-page blocking message is currently being shown to all non-admin users.'
