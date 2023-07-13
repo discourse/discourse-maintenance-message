@@ -5,7 +5,7 @@ function initialize(api) {
     setupComponent(args, component) {
       let showBlockingMessage = false;
 
-      if (component.currentUser === undefined) {
+      if (!component.currentUser) {
         showBlockingMessage = true;
       } else if (!component.currentUser.admin) {
         showBlockingMessage = true;
