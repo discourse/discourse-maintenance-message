@@ -5,6 +5,6 @@ export default class MaintenanceMessage extends Component {
   @service currentUser;
 
   get messageVisible() {
-    return !this.currentUser || !this.currentUser.admin;
+    return !this.currentUser?.admin;
   }
 }
