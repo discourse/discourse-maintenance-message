@@ -16,11 +16,9 @@
   box-sizing: border-box;
   height: 100%;
 
-  @supports (backdrop-filter: blur(6px)) or (-webkit-backdrop-filter: blur(6px)) {
+  @supports (backdrop-filter: blur(6px)) {
     background-color: rgba(var(--secondary-rgb), 0.25);
     backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    mask: linear-gradient(black, black, transparent);
     mask: linear-gradient(black, black, transparent);
   }
 }
