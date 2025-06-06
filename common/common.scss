@@ -1,5 +1,5 @@
 .maintenance-message-message--wrapper {
-  background-color: rgba(var(--secondary-rgb), 0.5);
+  background-color: rgb(var(--secondary-rgb), 0.5);
   width: 100vw;
   box-sizing: border-box;
   position: fixed;
@@ -8,7 +8,7 @@
 }
 
 .maintenance-message-message--container {
-  background-color: rgba(var(--secondary-rgb), 0.75);
+  background-color: rgb(var(--secondary-rgb), 0.75);
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -17,7 +17,7 @@
   height: 100%;
 
   @supports (backdrop-filter: blur(6px)) {
-    background-color: rgba(var(--secondary-rgb), 0.25);
+    background-color: rgb(var(--secondary-rgb), 0.25);
     backdrop-filter: blur(15px);
     mask: linear-gradient(black, black, transparent);
   }
